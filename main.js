@@ -5,16 +5,13 @@ const criarTarefa = (evento) => {
 
     const list = document.querySelector('[data-ul]');
     const input = document.querySelector('[data-form-input]');
-    // const button = document.querySelector("[data-form-button]");
     const values = input.value;
 
-    // Estou criando uma const chamada task que está acessando o index.html e falando para ele que eu vou querer uma <li></li>.
-    const task = document.createElement('li'); // <li></li>
-    // Aqui eu acesso a minha task(<li></li>), utilizo a propriedade classList para acessar a área de classes da tag que eu criei e uso o método add('task') passando a classe task para a minha tag <li></li>.
-    task.classList.add('task');                // <li class="task"> </li>
-
-    // Aqui eu estou chamando a const list que guarda a <ul></ul> e 
-    // inserindo a const task nessa tag.
+    const task = document.createElement('li'); 
+   
+    task.classList.add('task');      // <li class="task"> </li>      
+    const content = `<p class="content">${values}</p>`   // <p class="content">values</p>
+    task.innerHTML = content           // <li class="task"><p class="content">values</p></li>                                      
     list.appendChild(task);
     input.value = " ";
 }
