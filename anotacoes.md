@@ -11,6 +11,8 @@ estrutura: data-button // kebab-case
 .add() -> Método que adiciona algo no contexto.
 .addEventListener() -> Método que cria um evento para ser escutado.
 .remove() -> Remove algo do DOM.
+.preventDefault() -> Método que impede o comportamento padrão do formulário que iria "enviar" os dados quando o botão fosse clicado. 
+
 
 # Propriedades do JS
 .innerHtml -> Propriedade que insere um elemento dentro de outro elemento.Ex: class, tag.
@@ -18,3 +20,7 @@ estrutura: data-button // kebab-case
 .value -> Propriedade que acessa o valor digitado no input.
 .innerText -> Propriedade que inclui um texto em uma tag.
 .parentElement -> Propriedade que acessa o elemento pai.
+
+# Evento da criação da tarefa - Onde/Quando/O que
+onde_vai_acontecer.addEventListener('qual_e_o_evento', o_que).
+.addEventListener() -> Aqui esse método adiciona um ouvinte de evento ao botão. Caso o botão seja clicado, a função será chamada, permitindo que o código responda à ação do usuário e crie uma nova tarefa na lista.
